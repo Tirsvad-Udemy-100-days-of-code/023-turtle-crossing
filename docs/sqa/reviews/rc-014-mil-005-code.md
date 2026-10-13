@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [aa77784] |
 
 ---
 
@@ -57,3 +57,4 @@ Go - every Mandatory criterion of QC-PY-001 passes or is not applicable with a s
 
 [MIL-005]: ../../milestones/mil-005-collision-levelup.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[aa77784]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/commit/aa77784075b34f42c4f99d8cf39990142be025f8
