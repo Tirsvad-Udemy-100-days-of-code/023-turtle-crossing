@@ -1,0 +1,17 @@
+[project]
+name = "turtle-crossing"
+version = "0.1.0"
+description = "Day 23 of 100 Days of Code: a Turtle Crossing game built with the standard library turtle module."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { file = "LICENSE" }
+authors = [{ name = "Jens Tirsvad Nielsen" }]
+# No runtime dependencies: the game uses only the standard library.
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
