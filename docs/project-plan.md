@@ -33,14 +33,14 @@ gateway, inside a two-week window.
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Baseline documents | [MIL-001] | 10-13 to 10-14 | 2026-10-14 | S01 | none | Accepted planning baseline | |
-| Project scaffold | [MIL-002] | 10-14 to 10-15 | 2026-10-15 | S01 | none | Tooling, constants, README, CI | |
-| Player | [MIL-003] | 10-15 to 10-17 | 2026-10-17 | S01 | none | Player class and tests | |
-| Cars | [MIL-004] | 10-17 to 10-19 | 2026-10-19 | S01 | none | Car manager and car-shaped cars | |
-| Collision and level up | [MIL-005] | 10-19 to 10-21 | 2026-10-21 | S01 | none | Collision, finish line, speed-up | |
-| Scoreboard and game over | [MIL-006] | 10-21 to 10-23 | 2026-10-23 | S01 | none | Complete playable game | |
-| README and wiki | [MIL-007] | 10-23 to 10-26 | 2026-10-26 | S01 | none | README, wiki en/da/ms, Doxygen | |
-| Repository metadata and release | [MIL-008] | 10-26 to 10-27 | 2026-10-27 | S01 | none | Description, topics, final review | |
+| Baseline documents | [MIL-001] | 10-13 to 10-14 | 2026-10-14 | S01 | none | Accepted planning baseline | [Milestone 105](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/105) |
+| Project scaffold | [MIL-002] | 10-14 to 10-15 | 2026-10-15 | S01 | none | Tooling, constants, README, CI | [Milestone 106](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/106) |
+| Player | [MIL-003] | 10-15 to 10-17 | 2026-10-17 | S01 | none | Player class and tests | [Milestone 107](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/107) |
+| Cars | [MIL-004] | 10-17 to 10-19 | 2026-10-19 | S01 | none | Car manager and car-shaped cars | [Milestone 108](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/108) |
+| Collision and level up | [MIL-005] | 10-19 to 10-21 | 2026-10-21 | S01 | none | Collision, finish line, speed-up | [Milestone 109](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/109) |
+| Scoreboard and game over | [MIL-006] | 10-21 to 10-23 | 2026-10-23 | S01 | none | Complete playable game | [Milestone 110](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/110) |
+| README and wiki | [MIL-007] | 10-23 to 10-26 | 2026-10-26 | S01 | none | README, wiki en/da/ms, Doxygen | [Milestone 111](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/111) |
+| Repository metadata and release | [MIL-008] | 10-26 to 10-27 | 2026-10-27 | S01 | none | Description, topics, final review | [Milestone 112](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/112) |
 
 ```plantuml
 @startgantt
@@ -95,6 +95,8 @@ date is not guaranteed.
 - Repository name: the remote is `Tirsvad-Udemy-100-days-of-code/023-turtle-crossing`;
   the prompt wrote `Tirsvad-Udemy-100_days_of_code`. Assumed to be the same.
 - No QC checklist exists for the Project Plan; it is accepted by S01.
+- Merging is outstanding: pull requests for MIL-001 to MIL-007 are open and stacked; the merge is S01's, in order.
+- Wiki: the pages are in `wiki/`; they appear on the git host wiki once S01 publishes them (the wiki repository is separate).
 
 ---
 
