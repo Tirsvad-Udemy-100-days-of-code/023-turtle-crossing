@@ -36,6 +36,9 @@ class FakeCar:
     def xcor(self) -> float:
         return self.x
 
+    def ycor(self) -> float:
+        return self.y
+
     def setx(self, x: float) -> None:
         self.x = x
 
@@ -97,6 +100,37 @@ def test_cars_past_the_left_edge_are_removed() -> None:
     car.x = CAR_REMOVE_X
     manager.move_cars()
     assert manager.all_cars == [] and car.hidden
+
+
+class FakePlayer:
+    """Stands in for the player turtle."""
+
+    def __init__(self, x: float, y: float) -> None:
+        self.x, self.y = x, y
+
+    def xcor(self) -> float:
+        return self.x
+
+    def ycor(self) -> float:
+        return self.y
+
+
+def test_is_hit_when_a_car_overlaps_the_player() -> None:
+    manager = make_manager()
+    manager.create_cars()
+    car = manager.all_cars[0]
+    assert manager.is_hit(FakePlayer(car.x, car.y))
+
+
+def test_is_not_hit_when_cars_are_far_away() -> None:
+    manager = make_manager()
+    manager.create_cars()
+    car = manager.all_cars[0]
+    assert not manager.is_hit(FakePlayer(car.x - 200, car.y))
+
+
+def test_is_not_hit_when_there_are_no_cars() -> None:
+    assert not make_manager().is_hit(FakePlayer(0, 0))
 
 
 def test_level_up_increases_speed() -> None:
