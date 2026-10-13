@@ -7,6 +7,8 @@ permainan gaya Crossy Road. Pandu seekor penyu ke utara merentasi jalan yang
 sibuk. Setiap kali berjaya melintas, kereta menjadi lebih laju; satu perlanggaran
 menamatkan permainan.
 
+![Permainan: seekor penyu di antara kereta pada tahap 4](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/gameplay.png)
+
 | Halaman | Baca apabila anda mahu |
 | --- | --- |
 | [Pemasangan](Install-ms) | Klon repositori, cipta `.venv` dan jalankan permainan serta ujian |

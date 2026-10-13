@@ -6,6 +6,8 @@ Day 23 of Udemy's *100 Days of Code: The Complete Python Pro Bootcamp*: a
 Crossy Road style game. Steer a turtle north across a busy road. Every
 crossing makes the cars faster; one collision ends the game.
 
+![The game: a turtle among cars on level 4](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/gameplay.png)
+
 | Page | Read it when you want to |
 | --- | --- |
 | [Install](Install) | Clone the repository, create the `.venv` and run the game and the tests |
