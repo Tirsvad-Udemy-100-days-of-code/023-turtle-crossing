@@ -17,6 +17,10 @@ def main() -> None:
     screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
     screen.tracer(0)
 
+    player = Player()
+    screen.listen()
+    screen.onkey(player.go_up, "Up")
+
     game_is_on = True
     while game_is_on:
         time.sleep(LOOP_DELAY)
