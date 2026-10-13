@@ -5,6 +5,8 @@ Complete Python Pro Bootcamp*. Steer the turtle north across a busy road of
 randomly generated cars. Each crossing raises the level and the car speed; one
 collision ends the game. Written with the Python standard library only.
 
+![The game: a turtle among cars on level 4](docs/images/gameplay.png)
+
 ## Requirements
 
 - Python 3.13 or newer, with `tkinter` (the `turtle` module needs it).
@@ -71,6 +73,8 @@ Press the **Up** arrow key to move the turtle forward. Reaching the top edge
 returns the turtle to the start and speeds up the cars. A collision shows
 `GAME OVER`; click the window to close it.
 
+![Game over: the turtle was hit by a car](docs/images/game-over.png)
+
 ## Run the tests
 
 With the `.venv` active:
@@ -112,6 +116,7 @@ Open `docs/api/html/index.html` in a browser.
 │   └── scoreboard.py   Scoreboard
 ├── tests/          pytest tests
 ├── docs/           planning and review documents (business case, plan, milestones, reviews)
+│   └── images/         screenshots used by the README and the wiki
 ├── wiki/           wiki pages in English, Danish (-da) and Bahasa Malaysia (-ms)
 ├── Doxyfile        Doxygen configuration
 ├── pyproject.toml  project configuration and development dependencies

@@ -22,4 +22,8 @@
 - Wait for a gap: a new car is created on about one frame in six.
 - Every level adds the same speed step, so later levels need quick, short moves.
 
+![The game: a turtle among cars on level 4](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/gameplay.png)
+
+![Game over: the turtle was hit by a car](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/game-over.png)
+
 Back to [Home](Home).

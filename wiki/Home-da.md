@@ -6,6 +6,8 @@ Dag 23 i Udemys *100 Days of Code: The Complete Python Pro Bootcamp*: et spil i
 Crossy Road-stil. Styr en skildpadde mod nord over en travl vej. Hver
 krydsning gør bilerne hurtigere; ét sammenstød afslutter spillet.
 
+![Spillet: en skildpadde blandt biler på niveau 4](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/gameplay.png)
+
 | Side | Læs den, når du vil |
 | --- | --- |
 | [Installation](Install-da) | Klone repositoryet, oprette `.venv` og køre spillet og testene |

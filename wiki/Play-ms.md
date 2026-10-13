@@ -23,4 +23,8 @@
 - Setiap tahap menambah langkah kelajuan yang sama, jadi tahap lebih tinggi
   memerlukan gerakan pantas dan pendek.
 
+![Permainan: seekor penyu di antara kereta pada tahap 4](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/gameplay.png)
+
+![Permainan tamat: penyu dilanggar kereta](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/raw/branch/main/docs/images/game-over.png)
+
 Kembali ke [Laman utama](Home-ms).
