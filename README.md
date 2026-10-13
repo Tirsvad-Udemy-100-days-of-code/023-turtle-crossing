@@ -102,9 +102,17 @@ Open `docs/api/html/index.html` in a browser.
 
 ```text
 .
-├── src/            game source: main.py, constants.py, player.py, car_manager.py, scoreboard.py
+├── src/            game source
+│   ├── main.py         screen, objects and the game loop
+│   ├── constants.py    every constant
+│   ├── player.py       Player
+│   ├── car_manager.py  CarManager
+│   ├── car_shape.py    how a car is drawn
+│   ├── collision.py    collision test
+│   └── scoreboard.py   Scoreboard
 ├── tests/          pytest tests
 ├── docs/           planning and review documents (business case, plan, milestones, reviews)
+├── wiki/           wiki pages in English, Danish (-da) and Bahasa Malaysia (-ms)
 ├── Doxyfile        Doxygen configuration
 ├── pyproject.toml  project configuration and development dependencies
 └── .gitea/         continuous integration workflow
