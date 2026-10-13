@@ -1,5 +1,7 @@
 """Tests for the car drawing."""
 
+from turtle import TurtleScreen
+
 from car_shape import car_components, register_car_shapes, shape_name
 from constants import CAR_HEIGHT, CAR_LENGTH, COLORS
 
@@ -23,6 +25,6 @@ def test_body_and_cabin_use_the_car_colour() -> None:
     assert fills.count("green") == 2
 
 
-def test_register_car_shapes_adds_one_shape_per_colour(screen) -> None:
+def test_register_car_shapes_adds_one_shape_per_colour(screen: TurtleScreen) -> None:
     register_car_shapes(screen)
     assert all(shape_name(color) in screen.getshapes() for color in COLORS)

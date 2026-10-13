@@ -21,6 +21,7 @@ def main() -> None:
 
     player = Player()
     car_manager = CarManager()
+    scoreboard = Scoreboard()
     screen.listen()
     screen.onkey(player.go_up, "Up")
 
@@ -33,11 +34,14 @@ def main() -> None:
 
         if car_manager.is_hit(player):
             game_is_on = False
+            scoreboard.game_over()
 
         if player.is_at_finish_line():
             player.go_to_start()
             car_manager.level_up()
+            scoreboard.increase_level()
 
+    screen.update()
     screen.exitonclick()
 
 
