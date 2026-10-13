@@ -6,6 +6,7 @@ import time
 from turtle import Screen
 
 from car_manager import CarManager
+from car_shape import register_car_shapes
 from constants import LOOP_DELAY, SCREEN_HEIGHT, SCREEN_WIDTH
 from player import Player
 from scoreboard import Scoreboard
@@ -16,8 +17,10 @@ def main() -> None:
     screen = Screen()
     screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
     screen.tracer(0)
+    register_car_shapes(screen)
 
     player = Player()
+    car_manager = CarManager()
     screen.listen()
     screen.onkey(player.go_up, "Up")
 
@@ -25,6 +28,8 @@ def main() -> None:
     while game_is_on:
         time.sleep(LOOP_DELAY)
         screen.update()
+        car_manager.create_cars()
+        car_manager.move_cars()
 
 
 if __name__ == "__main__":
