@@ -92,6 +92,9 @@ available. On a headless Linux machine run `xvfb-run python -m pytest`.
 request. It sets up Python 3.13, upgrades `pip`, installs the development
 dependencies and runs `pytest` under a virtual display.
 
+The result of each run is shown on the pull request and on the repository's
+Actions page.
+
 ## Build the source documentation
 
 The source uses Doxygen comments and the `Doxyfile` in the project root.
