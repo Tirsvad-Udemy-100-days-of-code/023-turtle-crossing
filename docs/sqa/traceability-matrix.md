@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [93d8321] |
 
 ---
 
@@ -74,3 +74,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-008]: ./reviews/rc-008-mil-006.md
 [RC-009]: ./reviews/rc-009-mil-007.md
 [RC-010]: ./reviews/rc-010-mil-008.md
+[93d8321]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/commit/93d83217622a6c555dca728fe10c83c35f8ac7e2
