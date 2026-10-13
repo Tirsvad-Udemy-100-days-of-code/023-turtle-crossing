@@ -28,6 +28,16 @@ CAR_HEIGHT = 20
 SPAWN_ODDS = 6
 ## No cars in the top and bottom strip of this height.
 SAFE_ZONE = 50
+## A car spawns just off the right edge and is removed once fully off the left.
+CAR_START_X = SCREEN_WIDTH // 2 + CAR_LENGTH // 2
+CAR_REMOVE_X = -(SCREEN_WIDTH // 2 + CAR_LENGTH)
+## Cars are placed at a y coordinate within -CAR_Y_LIMIT..CAR_Y_LIMIT.
+CAR_Y_LIMIT = SCREEN_HEIGHT // 2 - SAFE_ZONE
+## Colours of the non-body parts of a car.
+CAR_OUTLINE_COLOR = "black"
+CAR_GLASS_COLOR = "light sky blue"
+CAR_TYRE_COLOR = "black"
+CAR_LIGHT_COLOR = "gold"
 
 ## Scoreboard text.
 FONT = ("Courier", 24, "normal")
