@@ -4,6 +4,12 @@
 A car is a compound turtle shape inside a 40 x 20 pixel footprint, front to the
 left: lower body, cabin, two windows, a headlight and two wheels. The geometry
 is plain data (see car_components) so it can be tested without a display.
+
+Shape frame: car_components works in screen coordinates (x along the car, front
+at -x). A turtle shape, however, is defined pointing up (forward is +y) and is
+rotated by the turtle's heading, so at heading 0 (east) it is turned clockwise
+by 90 degrees. to_shape_frame converts the points when the shapes are
+registered, so a car at heading 0 lies along x and drives to the left.
 """
 
 from turtle import Shape, TurtleScreen
@@ -74,6 +80,19 @@ def car_components(color: str) -> list[Component]:
     ]
 
 
+def to_shape_frame(point: tuple[float, float]) -> tuple[float, float]:
+    """@brief Convert a screen-coordinate point to the turtle shape's own frame.
+
+    A shape's forward direction is +y and heading 0 turns it clockwise by 90
+    degrees, so the screen point (x, y) must be registered as (-y, x).
+
+    @param point A point (x, y) in screen coordinates at heading 0.
+    @return The same point in the shape's frame.
+    """
+    x, y = point
+    return (-y, x)
+
+
 def register_car_shapes(screen: TurtleScreen) -> None:
     """@brief Register one car shape per colour with the screen.
 
@@ -82,5 +101,7 @@ def register_car_shapes(screen: TurtleScreen) -> None:
     for color in COLORS:
         shape = Shape("compound")
         for polygon, fill, outline in car_components(color):
-            shape.addcomponent(polygon, fill, outline)
+            shape.addcomponent(
+                tuple(to_shape_frame(point) for point in polygon), fill, outline
+            )
         screen.register_shape(shape_name(color), shape)
