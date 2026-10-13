@@ -5,8 +5,10 @@
 import random
 from collections.abc import Callable
 from turtle import Turtle
+from typing import Protocol
 
 from car_shape import shape_name
+from collision import is_colliding
 from constants import (
     CAR_REMOVE_X,
     CAR_START_X,
@@ -16,6 +18,18 @@ from constants import (
     SPAWN_ODDS,
     STARTING_MOVE_DISTANCE,
 )
+
+
+class HasPosition(Protocol):
+    """@brief Anything with a position, such as a turtle."""
+
+    def xcor(self) -> float:
+        """@brief X coordinate."""
+        ...
+
+    def ycor(self) -> float:
+        """@brief Y coordinate."""
+        ...
 
 
 class CarManager:
@@ -53,6 +67,17 @@ class CarManager:
         for car in [car for car in self.all_cars if car.xcor() < CAR_REMOVE_X]:
             car.hideturtle()
             self.all_cars.remove(car)
+
+    def is_hit(self, player: HasPosition) -> bool:
+        """@brief Tell whether any car collides with the player.
+
+        @param player Anything exposing xcor and ycor.
+        @return True when a car overlaps the player.
+        """
+        return any(
+            is_colliding(player.xcor(), player.ycor(), car.xcor(), car.ycor())
+            for car in self.all_cars
+        )
 
     def level_up(self) -> None:
         """@brief Make the cars faster."""

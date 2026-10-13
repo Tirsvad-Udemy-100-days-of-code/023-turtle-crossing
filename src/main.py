@@ -31,6 +31,15 @@ def main() -> None:
         car_manager.create_cars()
         car_manager.move_cars()
 
+        if car_manager.is_hit(player):
+            game_is_on = False
+
+        if player.is_at_finish_line():
+            player.go_to_start()
+            car_manager.level_up()
+
+    screen.exitonclick()
+
 
 if __name__ == "__main__":
     main()

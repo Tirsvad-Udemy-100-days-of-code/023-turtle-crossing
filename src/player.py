@@ -4,7 +4,7 @@
 
 from turtle import Turtle
 
-from constants import MOVE_DISTANCE, STARTING_POSITION
+from constants import FINISH_LINE_Y, MOVE_DISTANCE, STARTING_POSITION
 
 
 class Player(Turtle):
@@ -15,8 +15,19 @@ class Player(Turtle):
         super().__init__(shape="turtle")
         self.penup()
         self.setheading(90)
-        self.goto(STARTING_POSITION)
+        self.go_to_start()
 
     def go_up(self) -> None:
         """@brief Move one step north."""
         self.forward(MOVE_DISTANCE)
+
+    def is_at_finish_line(self) -> bool:
+        """@brief Tell whether the player has crossed the road.
+
+        @return True when the player is above the finish line.
+        """
+        return self.ycor() > FINISH_LINE_Y
+
+    def go_to_start(self) -> None:
+        """@brief Put the player back at the starting position."""
+        self.goto(STARTING_POSITION)
