@@ -1,5 +1,7 @@
 """Tests for the Player class (need a display; skipped without one)."""
 
+from turtle import TurtleScreen
+
 import pytest
 
 from constants import FINISH_LINE_Y, MOVE_DISTANCE, STARTING_POSITION
@@ -7,7 +9,7 @@ from player import Player
 
 
 @pytest.fixture
-def player(screen) -> Player:
+def player(screen: TurtleScreen) -> Player:
     new_player = Player()
     yield new_player
     new_player.hideturtle()
