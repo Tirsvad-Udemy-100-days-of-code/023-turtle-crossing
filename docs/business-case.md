@@ -4,14 +4,15 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | [SA-001], [PP-001] |
+| CrossReference | [SA-001], [PP-001], [MIL-009] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [93d8321] |
+| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [93d8321] |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 8, a scope item, a risk, an assumption and a constraint exception for the baseline milestone MIL-009; set the domain to education; reviewed in autonomous mode, not independent | [99f5f81] |
 
 ---
 
@@ -23,7 +24,7 @@ steers a turtle north across a multi-lane road of randomly generated cars; each
 crossing raises the level and the car speed, and a collision ends the game.
 This project delivers the game as a small, readable, tested Python repository
 with no runtime dependencies, so that course participants can run and compare
-it and GitHub visitors can browse it for ideas.
+it and GitHub visitors can browse it for ideas. A later milestone, [MIL-009], brings the finished project to the baseline of the framework.
 
 ## Methodological and Standards Foundation
 
@@ -61,6 +62,7 @@ documentation and a multilingual wiki, at no dependency cost.
 4. Provide a README from the agreed template, a local `.venv` guide, a
    `Doxyfile`, CI and a wiki in English, Danish and Bahasa Malaysia.
 5. Publish the repository with a description and topics.
+6. Bring the finished project to the common baseline of the framework: the adopted framework release, the wiki in the framework's location `docs/wiki/`, the README in the framework template, complete licence metadata and review records for every document ([MIL-009]).
 
 ## Scope
 
@@ -73,6 +75,7 @@ documentation and a multilingual wiki, at no dependency cost.
   comments and `Doxyfile`.
 - README, CI workflow, wiki pages in `en`, `da` and `ms`.
 - Repository description and topics on the git host.
+- The baseline milestone [MIL-009]: framework release, wiki moved to `docs/wiki/`, README in the framework template, licence metadata, review records and the shared continuous integration (CI) lint rules. It changes no behaviour of the game.
 
 ### Out of Scope
 
@@ -80,6 +83,7 @@ documentation and a multilingual wiki, at no dependency cost.
 - Menus, difficulty selection, high-score persistence, networking.
 - Packaging for PyPI.
 - Re-implementing the Hard and Expert course variants.
+- Any change to `src/` or `tests/` in the baseline milestone [MIL-009].
 
 ## Expected Benefits
 
@@ -110,6 +114,7 @@ same planning, review and pull-request discipline across the whole series.
 | 5 | Run instructions work | A fresh clone runs following the README on Windows, Linux and macOS sections | S01 follows the README on a clean clone |
 | 6 | Wiki in three languages | Every wiki page exists in `en`, `da`, `ms` | File listing of the wiki |
 | 7 | Repository metadata | Description and at least 5 topics set | Repository page |
+| 8 | The baseline milestone is done (objective 6) | Wiki pages in 3 languages in `docs/wiki/`, `framework/scripts/check-readme.sh` exits with code 0, 100 % of the CI checks of the pull request of [MIL-009] pass | Files in `docs/wiki/`, the script exit code and the pull request status on the git host |
 
 ## Risks
 
@@ -120,6 +125,7 @@ same planning, review and pull-request discipline across the whole series.
 | Python 3.13 tkinter missing on some Linux installs | Participants cannot run the game | Document `python3-tk` in the Linux Debian section |
 | Tokens in `.env` end up in the repository | Credential leak | `.env` in `.gitignore` before the first commit that adds files; the file is never read by project code |
 | Scope creep from "nice to have" features | Delay | Out of Scope list; changes need a Business Case amendment |
+| The documents of the baseline milestone [MIL-009] are reviewed by an AI stand-in for S01 | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, and the end-of-run summary lists it for challenge |
 
 ## Assumptions
 
@@ -130,6 +136,7 @@ same planning, review and pull-request discipline across the whole series.
 - S01 can reach S02 and S03 through the git host and the course forum.
 - The git host `git.tirsystem.com` is available for the repository and wiki.
 - S01 stated no deadline; the plan assumes two weeks (see PP-001 Open Issues).
+- The baseline milestone [MIL-009] is finished within one week of its own start, 2026-11-15, by 2026-11-22. For that milestone only, an AI stand-in for S01 reviews and accepts the changed documents.
 
 ## Constraints
 
@@ -137,6 +144,7 @@ same planning, review and pull-request discipline across the whole series.
 - Constants live in `constants.py`; configuration lives in `pyproject.toml`.
 - Layout is `src/`, `tests/` and `docs/`.
 - Only the standard library at runtime.
+- The baseline milestone [MIL-009] is the exception to the rule of one reviewer: S01 has authorised the assistant to commit, push, open the pull request and merge it in autonomous mode.
 
 ## Cost–Benefit Assessment
 
@@ -165,3 +173,5 @@ serves all three stakeholders.
 [SA-001]: ./stakeholder-analysis.md
 [PP-001]: ./project-plan.md
 [93d8321]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/commit/93d83217622a6c555dca728fe10c83c35f8ac7e2
+[MIL-009]: ./milestones/mil-009-framework-baseline.md
+[99f5f81]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/commit/99f5f819127f7d77ea0b6b9fe782e14766de5395

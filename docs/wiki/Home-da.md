@@ -1,6 +1,6 @@
-# Turtle Crossing
+[English](Home) · **Dansk** · [Bahasa Malaysia](Home-ms)
 
-🌐 [English](Home) · **Dansk** · [Bahasa Malaysia](Home-ms)
+# Turtle Crossing
 
 Dag 23 i Udemys *100 Days of Code: The Complete Python Pro Bootcamp*: et spil i
 Crossy Road-stil. Styr en skildpadde mod nord over en travl vej. Hver
@@ -13,6 +13,7 @@ krydsning gør bilerne hurtigere; ét sammenstød afslutter spillet.
 | [Installation](Install-da) | Klone repositoryet, oprette `.venv` og køre spillet og testene |
 | [Spil](Play-da) | Lære reglerne og styringen |
 | [Arkitektur](Architecture-da) | Se hvordan koden er delt i moduler, og hvorfor |
+| [Projektdokumenter](Project-Documents-da) | Se projektets plan- og gennemgangsdokumenter |
 
 ## Overblik
 

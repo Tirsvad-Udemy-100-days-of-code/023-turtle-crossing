@@ -1,6 +1,6 @@
-# Arkitektur
+[English](Architecture) · **Dansk** · [Bahasa Malaysia](Architecture-ms)
 
-🌐 [English](Architecture) · **Dansk** · [Bahasa Malaysia](Architecture-ms)
+# Arkitektur
 
 ## Moduler (`src/`)
 

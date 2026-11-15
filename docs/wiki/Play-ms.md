@@ -1,6 +1,6 @@
-# Main
+[English](Play) · [Dansk](Play-da) · **Bahasa Malaysia**
 
-🌐 [English](Play) · [Dansk](Play-da) · **Bahasa Malaysia**
+# Main
 
 ## Kawalan
 

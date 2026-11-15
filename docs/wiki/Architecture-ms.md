@@ -1,6 +1,6 @@
-# Seni bina
+[English](Architecture) · [Dansk](Architecture-da) · **Bahasa Malaysia**
 
-🌐 [English](Architecture) · [Dansk](Architecture-da) · **Bahasa Malaysia**
+# Seni bina
 
 ## Modul (`src/`)
 

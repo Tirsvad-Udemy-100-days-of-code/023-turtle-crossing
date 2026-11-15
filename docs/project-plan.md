@@ -4,14 +4,15 @@
 | Key | Value |
 | --- | --- |
 | ID | PP-001 |
-| CrossReference | [BC-001], [SA-001] |
+| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005], [MIL-006], [MIL-007], [MIL-008], [MIL-009] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [93d8321] |
+| 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [93d8321] |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-009, its schedule row, scope coverage, dependency, risk and Gantt entries and the No-Go rule; updated the open issues about merging and the wiki location; set the domain to education; reviewed in autonomous mode, not independent | [99f5f81] |
 
 ---
 
@@ -21,6 +22,8 @@ Schedule the eight gateways that take the Turtle Crossing project from a
 reviewed baseline to a published, documented game, one pull request per
 gateway, inside a two-week window.
 
+A ninth gateway, [MIL-009], was added on 2026-11-15 to bring the finished project to the baseline of the framework; it runs from 2026-11-15 to 2026-11-22.
+
 ## Planning Assumptions
 
 - Week 1 starts 2026-10-13; the plan ends by 2026-10-27. S01 gave no deadline,
@@ -28,6 +31,8 @@ gateway, inside a two-week window.
 - Each gateway is one branch and one pull request, in the order of the
   course's steps.
 - S01 owns and approves every gateway; reviews are not independent.
+- The baseline gateway [MIL-009] starts 2026-11-15 and ends by 2026-11-22, one week (source: [BC-001], Assumptions). The end date of the plan moves from 2026-10-27 to 2026-11-22 because of it; the reason is the agreed minimum quality baseline of the framework.
+- For [MIL-009] S01 has authorised the assistant to commit, push, open the pull request and merge it, and the review is done by an AI stand-in for S01 (source: [BC-001], Constraints; [SA-001], Conflicting Interests and Mitigations).
 
 ## Gateway Schedule
 
@@ -41,6 +46,7 @@ gateway, inside a two-week window.
 | Scoreboard and game over | [MIL-006] | 10-21 to 10-23 | 2026-10-23 | S01 | none | Complete playable game | [Milestone 110](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/110) |
 | README and wiki | [MIL-007] | 10-23 to 10-26 | 2026-10-26 | S01 | none | README, wiki en/da/ms, Doxygen | [Milestone 111](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/111) |
 | Repository metadata and release | [MIL-008] | 10-26 to 10-27 | 2026-10-27 | S01 | none | Description, topics, final review | [Milestone 112](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/112) |
+| Framework baseline | [MIL-009] | 11-15 to 11-22 | 2026-11-22 | S01 | none | The framework release, the wiki in `docs/wiki/`, the README in the framework template, the licence metadata and the review records | [Milestone 531](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/milestone/531) |
 
 ```plantuml
 @startgantt
@@ -53,8 +59,10 @@ Project starts 2026-10-13
 [Scoreboard and game over] starts 2026-10-21 and ends 2026-10-23
 [README and wiki] starts 2026-10-23 and ends 2026-10-26
 [Repository metadata and release] starts 2026-10-26 and ends 2026-10-27
+[Framework baseline] starts 2026-11-15 and ends 2026-11-22
 [Baseline Go/No-Go] happens 2026-10-14
 [Release Go/No-Go] happens 2026-10-27
+[Framework baseline Go/No-Go] happens 2026-11-22
 @endgantt
 ```
 
@@ -68,15 +76,16 @@ Project starts 2026-10-13
 | `pyproject.toml`, `.gitignore`, Doxygen, `Doxyfile` | [MIL-002] |
 | README, CI, wiki in en, da, ms | [MIL-002], [MIL-007] |
 | Repository description and topics | [MIL-008] |
+| The baseline milestone: framework release, wiki location, README template, licence metadata, review records | [MIL-009] |
 
 ## Dependencies
 
 ```
-MIL-001 -> MIL-002 -> MIL-003 -> MIL-004 -> MIL-005 -> MIL-006 -> MIL-007 -> MIL-008
+MIL-001 -> MIL-002 -> MIL-003 -> MIL-004 -> MIL-005 -> MIL-006 -> MIL-007 -> MIL-008 -> MIL-009
 ```
 
 A No-Go at a gateway moves every later date by the rework time; the final
-date is not guaranteed.
+date is not guaranteed. A No-Go on [MIL-009] leaves the game and the earlier gateways as they are; S01 decides the new date.
 
 ## Plan Risks
 
@@ -85,6 +94,7 @@ date is not guaranteed.
 | Evening-only availability | Schedule slip | Gateways are small; dates are decision dates, not commitments |
 | Wiki translations (da, ms) take longer than code | MIL-007 slips | Write English first; da and ms follow the same page structure |
 | Custom car shape needs several iterations | MIL-004 slips | Design the shape first as its own task |
+| A continuous integration (CI) check fails on the pull request of [MIL-009] | The merge is delayed past 2026-11-22 | The failure is fixed on the same branch and the checks run again; after three failed rounds on one cause the work stops and S01 decides (trace: success criterion 8 of [BC-001]) |
 
 ## Open Issues
 
@@ -95,8 +105,8 @@ date is not guaranteed.
 - Repository name: the remote is `Tirsvad-Udemy-100-days-of-code/023-turtle-crossing`;
   the prompt wrote `Tirsvad-Udemy-100_days_of_code`. Assumed to be the same.
 - No QC checklist exists for the Project Plan; it is accepted by S01.
-- Merging is outstanding: pull requests for MIL-001 to MIL-007 are open and stacked; the merge is S01's, in order.
-- Wiki: the pages are in `wiki/`; they appear on the git host wiki once S01 publishes them (the wiki repository is separate).
+- Merging: the pull requests of MIL-001 to MIL-008 are merged; [MIL-009] is merged by the assistant in autonomous mode.
+- Wiki: the pages moved from `wiki/` to `docs/wiki/` in [MIL-009], the location the framework requires; the host publishes them from there after the merge and the published wiki is checked then. The older pages named with a space (`Home da`) stay on the host; this project does not delete them.
 
 ---
 
@@ -111,3 +121,5 @@ date is not guaranteed.
 [MIL-007]: ./milestones/mil-007-readme-wiki.md
 [MIL-008]: ./milestones/mil-008-repo-metadata.md
 [93d8321]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/commit/93d83217622a6c555dca728fe10c83c35f8ac7e2
+[MIL-009]: ./milestones/mil-009-framework-baseline.md
+[99f5f81]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/commit/99f5f819127f7d77ea0b6b9fe782e14766de5395

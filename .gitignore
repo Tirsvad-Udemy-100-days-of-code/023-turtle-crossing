@@ -1,6 +1,7 @@
 # Secrets: never commit tokens
 .env
 .env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -35,3 +36,6 @@ docs/api/
 *.swp
 .DS_Store
 Thumbs.db
+
+# AI prompt logs (private notes)
+/docs/ai-prompts/
