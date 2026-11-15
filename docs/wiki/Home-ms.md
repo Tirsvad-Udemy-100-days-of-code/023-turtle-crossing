@@ -1,6 +1,6 @@
-# Turtle Crossing
+[English](Home) · [Dansk](Home-da) · **Bahasa Malaysia**
 
-🌐 [English](Home) · [Dansk](Home-da) · **Bahasa Malaysia**
+# Turtle Crossing
 
 Hari ke-23 dalam *100 Days of Code: The Complete Python Pro Bootcamp* Udemy:
 permainan gaya Crossy Road. Pandu seekor penyu ke utara merentasi jalan yang
@@ -14,6 +14,7 @@ menamatkan permainan.
 | [Pemasangan](Install-ms) | Klon repositori, cipta `.venv` dan jalankan permainan serta ujian |
 | [Main](Play-ms) | Mempelajari peraturan dan kawalan |
 | [Seni bina](Architecture-ms) | Melihat bagaimana kod dibahagikan kepada modul dan sebabnya |
+| [Dokumen Projek](Project-Documents-ms) | Lihat dokumen perancangan dan semakan projek |
 
 ## Ringkasan
 

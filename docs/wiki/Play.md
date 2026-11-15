@@ -1,6 +1,6 @@
-# Play
+**English** · [Dansk](Play-da) · [Bahasa Malaysia](Play-ms)
 
-🌐 **English** · [Dansk](Play-da) · [Bahasa Malaysia](Play-ms)
+# Play
 
 ## Controls
 

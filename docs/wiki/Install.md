@@ -1,12 +1,12 @@
-# Installation
+**English** · [Dansk](Install-da) · [Bahasa Malaysia](Install-ms)
 
-🌐 [English](Install) · **Dansk** · [Bahasa Malaysia](Install-ms)
+# Install
 
-## Krav
+## Requirements
 
-- Python 3.13 eller nyere med `tkinter`.
+- Python 3.13 or newer with `tkinter`.
 - `git`.
-- Valgfrit: Doxygen til kildedokumentationen.
+- Optional: Doxygen for the source documentation.
 
 ## Windows PowerShell
 
@@ -43,11 +43,11 @@ python -m pip install --upgrade pip
 python -m pip install --group dev
 ```
 
-## Kør og test
+## Run and test
 
 ```bash
 python src/main.py
 python -m pytest
 ```
 
-Næste: [Spil](Play-da).
+Next: [Play](Play).

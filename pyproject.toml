@@ -4,10 +4,16 @@ version = "0.1.0"
 description = "Day 23 of 100 Days of Code: a Turtle Crossing game built with the standard library turtle module."
 readme = "README.md"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
 authors = [{ name = "Jens Tirsvad Nielsen" }]
 # No runtime dependencies: the game uses only the standard library.
 dependencies = []
+
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing"
+Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/wiki"
+"Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/023-turtle-crossing/issues"
 
 [dependency-groups]
 dev = ["pytest>=8"]

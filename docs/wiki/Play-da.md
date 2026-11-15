@@ -1,6 +1,6 @@
-# Spil
+[English](Play) · **Dansk** · [Bahasa Malaysia](Play-ms)
 
-🌐 [English](Play) · **Dansk** · [Bahasa Malaysia](Play-ms)
+# Spil
 
 ## Styring
 

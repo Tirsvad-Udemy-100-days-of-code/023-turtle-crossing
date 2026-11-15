@@ -1,6 +1,6 @@
-# Turtle Crossing
+**English** · [Dansk](Home-da) · [Bahasa Malaysia](Home-ms)
 
-🌐 **English** · [Dansk](Home-da) · [Bahasa Malaysia](Home-ms)
+# Turtle Crossing
 
 Day 23 of Udemy's *100 Days of Code: The Complete Python Pro Bootcamp*: a
 Crossy Road style game. Steer a turtle north across a busy road. Every
@@ -13,6 +13,7 @@ crossing makes the cars faster; one collision ends the game.
 | [Install](Install) | Clone the repository, create the `.venv` and run the game and the tests |
 | [Play](Play) | Learn the rules and the controls |
 | [Architecture](Architecture) | See how the code is split into modules and why |
+| [Project Documents](Project-Documents) | See the planning and review documents of the project |
 
 ## At a glance
 
